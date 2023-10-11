@@ -6,6 +6,13 @@ def index(request):
     }
     return render(request, "index.html", context)
 
+#def index(request):
+#    return HttpResponse("Hello, world. You're at the polls index.")
+
+
+
+#dame una serie de paginas que se llamen index, about, services, store, contact, blog, sample
+
 def home(request):
     return HttpResponse("Inicio")
 
@@ -26,3 +33,13 @@ def blog(request):
 
 def sample(request):
     return HttpResponse("Sample")
+
+def login(request):
+    return HttpResponse("Login")
+
+def register(request):
+    return HttpResponse("Register")
+
+def logout(request):
+    return HttpResponse("Logout")
+
