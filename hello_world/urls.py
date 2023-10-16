@@ -18,6 +18,9 @@ from django.urls import path, include
 
 from hello_world.core import views as core_views
 
+#from my_app import views
+#from other_app.views import Home
+
 urlpatterns = [
     path("", core_views.index),
     path("admin/", admin.site.urls),
@@ -29,4 +32,6 @@ urlpatterns = [
     path('contact/', core_views.contact, name="contact"),
     path('blog/', core_views.blog, name="blog"),
     path('sample/', core_views.sample, name="sample"),
+    #path('', Home.as_view(), name='home'),
+    #path('blog/', include('blog.urls')),
 ]
