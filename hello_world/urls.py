@@ -29,6 +29,4 @@ urlpatterns = [
     path('contact/', core_views.contact, name="contact"),
     path('blog/', core_views.blog, name="blog"),
     path('sample/', core_views.sample, name="sample"),
-    #path('', Home.as_view(), name='home'),
-    #path('blog/', include('blog.urls')),
 ]

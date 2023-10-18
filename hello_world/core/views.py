@@ -14,32 +14,47 @@ def index(request):
 #dame una serie de paginas que se llamen index, about, services, store, contact, blog, sample
 
 def home(request):
-    return HttpResponse("Inicio")
+    context = {
+        "title": "Home",
+    }
+    return render(request, "home.html", context)
 
 def about(request):
-    return HttpResponse("Historia")
+    context = {
+        "title": "about",
+    }
+    return render(request, "about.html", context)
 
 def services(request):
-    return HttpResponse("Servicios")
+
+    context = {
+        "title": "Django example",
+    }
+    return render(request, "services.html", context)
 
 def store(request):
-    return HttpResponse("Visítanos")
+    
+    context = {
+        "title": "Django example",
+    }
+    return render(request, "store.html", context)
 
 def contact(request):
-    return HttpResponse("Contacto")
+    context = {
+        "title": "Contact",
+    }
+    return render(request, "contact.html", context)
 
 def blog(request):
-    return HttpResponse("Blog")
+    context = {
+        "title": "Blog",
+    }
+    return render(request, "blog.html", context)
 
 def sample(request):
-    return HttpResponse("Sample")
+    context = {
+        "title": "Sample",
+    }
+    return render(request, "sample.html", context)
 
-def login(request):
-    return HttpResponse("Login")
-
-def register(request):
-    return HttpResponse("Register")
-
-def logout(request):
-    return HttpResponse("Logout")
 
